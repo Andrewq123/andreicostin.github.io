@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Play | Andrei Costin</title>
+<meta name="description" content="Play Bug Squash and talk to JARVIS-lite, two small browser demos made by Andrei Costin.">
+<meta name="theme-color" content="#07090D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Play | Andrei Costin">
+<meta property="og:description" content="Play Bug Squash and talk to JARVIS-lite, two small browser demos made by Andrei Costin.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js");try{if(localStorage.getItem("theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="brand" href="index.html">Andrei Costin</a><nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="tools.html">Tools</a><a href="play.html" aria-current="page">Play</a><a href="contact.html">Contact</a><button id="theme" type="button" class="ghost" aria-pressed="false">Lights on</button></nav></header>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="assets/img/hero-play.svg" alt="" width="1600" height="800">
+  <div class="hero-text"><h1>Play</h1>
+    <p class="lead">Two small things made for fun: a bug-squashing game and a tiny assistant.</p></div>
+</div>
+<div class="wrap">
+  <h2>Bug Squash</h2>
+  <p class="note">Click the bugs before they move. You have 30 seconds.</p>
+  <div class="bar">
+    <span>Score: <strong id="score">0</strong></span><span>Time: <strong id="time">30</strong></span><span>Best: <strong id="best">0</strong></span>
+    <button id="start" type="button">Start</button>
+  </div>
+  <div id="arena" class="arena" role="group" aria-label="Bug Squash board"></div>
+
+  <h2>Ask JARVIS-lite</h2>
+  <p class="note">A small demo written for this site. It only knows a few commands, so type <em>help</em>.</p>
+  <div class="term">
+    <div id="term-out" aria-live="polite"></div>
+    <form id="term-form" autocomplete="off">
+      <label for="term-in" class="sr">Command</label><span aria-hidden="true">&gt;</span>
+      <input id="term-in" maxlength="40" placeholder="type a command">
+    </form>
+  </div>
+</div>
+</main>
+<footer class="foot">
+<p class="credit">A portfolio by Andrei Costin</p>
+<p>Based in Chișinău, Moldova. Open to part-time and remote work.</p>
+<p class="links"><a href="https://github.com/Andrewq123">GitHub</a><a href="mailto:acindustries.business@gmail.com">acindustries.business@gmail.com</a></p>
+<p>The banner pictures are drawings made for this site.</p>
+</footer>
+<script src="js/main.js" defer></script><script src="js/play.js" defer></script>
+</body>
+</html>

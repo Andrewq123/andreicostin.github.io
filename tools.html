@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tools | Andrei Costin</title>
+<meta name="description" content="A free bug report writer by Andrei Costin: steps, expected result, actual result and severity, ready to copy into any tracker.">
+<meta name="theme-color" content="#07090D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tools | Andrei Costin">
+<meta property="og:description" content="A free bug report writer by Andrei Costin: steps, expected result, actual result and severity, ready to copy into any tracker.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js");try{if(localStorage.getItem("theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="brand" href="index.html">Andrei Costin</a><nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="tools.html" aria-current="page">Tools</a><a href="play.html">Play</a><a href="contact.html">Contact</a><button id="theme" type="button" class="ghost" aria-pressed="false">Lights on</button></nav></header>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="assets/img/hero-tools.svg" alt="" width="1600" height="800">
+  <div class="hero-text"><h1>Tools</h1>
+    <p class="lead">A bug report writer. Fill in the form and copy a clean report to paste into any tracker.</p></div>
+</div>
+<div class="wrap">
+  <div class="split">
+    <form id="bug-form" novalidate>
+      <label for="title">Title</label><input id="title" name="title" maxlength="120">
+      <label for="severity">Severity</label>
+      <select id="severity" name="severity"><option>Low</option><option selected>Medium</option><option>High</option><option>Critical</option></select>
+      <label for="env">Environment</label><input id="env" name="env" placeholder="Chrome 126, Android 14">
+      <label for="steps">Steps (one per line)</label><textarea id="steps" name="steps" rows="4"></textarea>
+      <label for="expected">Expected result</label><textarea id="expected" name="expected" rows="2"></textarea>
+      <label for="actual">Actual result</label><textarea id="actual" name="actual" rows="2"></textarea>
+    </form>
+    <div>
+      <div class="run-head plain"><strong>Your report</strong><button id="copy" type="button">Copy report</button></div>
+      <pre id="bug-out" class="out" aria-live="polite"></pre>
+    </div>
+  </div>
+</div>
+</main>
+<footer class="foot">
+<p class="credit">A portfolio by Andrei Costin</p>
+<p>Based in Chișinău, Moldova. Open to part-time and remote work.</p>
+<p class="links"><a href="https://github.com/Andrewq123">GitHub</a><a href="mailto:acindustries.business@gmail.com">acindustries.business@gmail.com</a></p>
+<p>The banner pictures are drawings made for this site.</p>
+</footer>
+<script src="js/main.js" defer></script><script src="js/tools.js" defer></script>
+</body>
+</html>

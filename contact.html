@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Andrei Costin</title>
+<meta name="description" content="Contact Andrei Costin for small website testing, bug fixing or coding jobs. Remote, part-time, Monday to Friday 1 PM to 8 PM.">
+<meta name="theme-color" content="#07090D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Andrei Costin">
+<meta property="og:description" content="Contact Andrei Costin for small website testing, bug fixing or coding jobs. Remote, part-time, Monday to Friday 1 PM to 8 PM.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>document.documentElement.classList.add("js");try{if(localStorage.getItem("theme")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><a class="brand" href="index.html">Andrei Costin</a><nav aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="tools.html">Tools</a><a href="play.html">Play</a><a href="contact.html" aria-current="page">Contact</a><button id="theme" type="button" class="ghost" aria-pressed="false">Lights on</button></nav></header>
+<main id="main">
+<div class="hero">
+  <img class="hero-img" src="assets/img/hero-contact.svg" alt="" width="1600" height="800">
+  <div class="hero-text"><h1>Contact</h1>
+    <p class="lead">Need something tested or a small site built? Send me a message.</p></div>
+</div>
+<div class="wrap">
+  <p class="direct">Email: <a href="mailto:acindustries.business@gmail.com">acindustries.business@gmail.com</a></p>
+  <p class="note">Available Monday to Friday, 1 PM to 8 PM (Moldova time). Remote work is fine.</p>
+  <form id="contact-form" novalidate>
+    <label for="name">Name</label>
+    <input id="name" name="name" maxlength="80" required autocomplete="name">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" maxlength="120" required autocomplete="email">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" maxlength="1000" required></textarea>
+    <p id="form-error" class="err" role="alert" hidden></p>
+    <p id="form-ok" class="ok" role="status" hidden>Your email app should open with the message ready to send. If nothing happens, write to acindustries.business@gmail.com.</p>
+    <button type="submit">Send message</button>
+  </form>
+</div>
+</main>
+<footer class="foot">
+<p class="credit">A portfolio by Andrei Costin</p>
+<p>Based in Chișinău, Moldova. Open to part-time and remote work.</p>
+<p class="links"><a href="https://github.com/Andrewq123">GitHub</a><a href="mailto:acindustries.business@gmail.com">acindustries.business@gmail.com</a></p>
+<p>The banner pictures are drawings made for this site.</p>
+</footer>
+<script src="js/main.js" defer></script><script src="js/contact.js" defer></script>
+</body>
+</html>
